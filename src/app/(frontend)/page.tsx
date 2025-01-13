@@ -31,8 +31,7 @@ export default function Page() {
         <div className="container flex">
           <h2 className="font-heading flex h-48 w-1/2 items-center px-20 text-3xl">
             <Balancer>
-              Expert web solutions tailored to the AEC industry by those who
-              know it best
+              Innovative online strategies tailored to the AEC sector
             </Balancer>
           </h2>
           <div className="flex h-48 w-1/2 flex-grow items-center space-x-2 px-20">
@@ -118,16 +117,17 @@ export default function Page() {
             className="w-full"
           />
         </div>
-        <div className="flex w-[450px] flex-col space-y-10 px-16 pt-20">
+        <div className="flex w-[450px] flex-col space-y-10 px-8 pt-20">
           <h2 className="font-heading text-5xl">
-            <Balancer>Empowering Civil Brands with Digital Innovation</Balancer>
+            <Balancer>Is your website a sleeper or a sales superstar?</Balancer>
           </h2>
-          <p>
-            At Civil Brand Works, we blend in-depth industry knowledge with
-            cutting-edge web solutions. Our goal is to transform your online
-            presence into a dynamic tool that showcases your expertise and
-            drives growth.
-          </p>
+          <Balancer>
+            If it is an afterthought, you&apos;re not alone. Many AEC companies
+            struggle to make the most of their websites. Every day, thousands of
+            potential customers search for solutions online. Let us transform
+            your website into a powerful tool that attracts and converts these
+            prospects.
+          </Balancer>
         </div>
       </div>
     </Fragment>
