@@ -14,10 +14,10 @@ export default function Page() {
   return (
     <Fragment>
       <PageClient />
-      <div className="flex h-[550px] items-center bg-[url(/bridge.jpg)] bg-contain bg-fixed bg-no-repeat">
-        <div className="w-full border-b border-t border-dotted border-slate-500">
+      <div className="flex items-center bg-[url(/bridge.jpg)] bg-contain bg-fixed bg-no-repeat">
+        <div className="z-10 my-24 w-full border-b border-t border-dotted border-slate-500">
           <div className="container">
-            <h2 className="font-heading text-[7rem] leading-[100px] text-slate-50 underline">
+            <h2 className="font-heading text-[7rem] leading-[110px] text-slate-50 underline">
               <span className="block w-[340px] bg-slate-900">Digital</span>{" "}
               <span className="block w-[530px] bg-slate-900">Marketing</span>{" "}
               <span className="block w-[750px] bg-slate-900">
@@ -27,9 +27,9 @@ export default function Page() {
           </div>
         </div>
       </div>
-      <div className="w-full border-b border-t border-dotted border-slate-500">
+      <div className="w-full border-b border-dotted border-slate-500">
         <div className="container flex">
-          <h2 className="font-heading flex h-48 w-1/2 items-center px-20 text-3xl">
+          <h2 className="flex h-48 w-1/2 items-center px-20 font-heading text-3xl">
             <Balancer>
               Innovative online strategies tailored to the AEC sector
             </Balancer>
@@ -109,7 +109,7 @@ export default function Page() {
         </div>
       </div>
       <div className="flex w-full">
-        <div className="w-3/5">
+        <div className="z-10 w-3/5">
           <Image
             src={rebar}
             alt="Construction workers observing rebar placement on a large paving area."

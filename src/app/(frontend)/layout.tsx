@@ -28,7 +28,7 @@ const LayoutGuide = () => (
 );
 
 const GridLines = () => (
-  <div className="pointer-events-none absolute top-0 z-10 h-[10000px] w-full">
+  <div className="z-1 pointer-events-none absolute top-0 h-[10000px] w-full">
     <div className="container flex h-full">
       <div className="h-full w-1/2 border-l border-r border-dotted border-slate-500" />
       <div className="h-full flex-grow border-r border-dotted border-slate-500" />
