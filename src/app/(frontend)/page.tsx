@@ -17,8 +17,12 @@ export default function Page() {
       <div className="flex h-[550px] items-center bg-[url(/bridge.jpg)] bg-contain bg-fixed bg-no-repeat">
         <div className="w-full border-b border-t border-dotted border-slate-500">
           <div className="container">
-            <h2 className="font-heading w-1/2 bg-slate-900 text-[7rem] leading-[6rem] text-slate-50 underline">
-              <Balancer>Infrastructure Focused</Balancer>
+            <h2 className="font-heading text-[7rem] leading-[100px] text-slate-50 underline">
+              <span className="block w-[340px] bg-slate-900">Digital</span>{" "}
+              <span className="block w-[530px] bg-slate-900">Marketing</span>{" "}
+              <span className="block w-[750px] bg-slate-900">
+                for Civil Brands
+              </span>{" "}
             </h2>
           </div>
         </div>
@@ -27,7 +31,8 @@ export default function Page() {
         <div className="container flex">
           <h2 className="font-heading flex h-48 w-1/2 items-center px-20 text-3xl">
             <Balancer>
-              Expert Web Solutions for the Civil Infrastructure Industry
+              Expert web solutions tailored to the AEC industry by those who
+              know it best
             </Balancer>
           </h2>
           <div className="flex h-48 w-1/2 flex-grow items-center space-x-2 px-20">
