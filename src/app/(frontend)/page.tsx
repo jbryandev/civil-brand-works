@@ -5,6 +5,7 @@ import { ArrowDown, ArrowUpRight, Star } from "lucide-react";
 import Balancer from "react-wrap-balancer";
 
 import { PatternBackground } from "@/components/PatternBackground";
+import ServicesCircles from "@/components/ServicesCircles";
 import { Button } from "@/components/ui/button";
 
 import rebar from "../../../public/rebar.jpg";
@@ -108,8 +109,8 @@ export default function Page() {
           </div>
         </div>
       </div>
-      <div className="flex w-full">
-        <div className="z-10 w-3/5">
+      <div className="container flex pb-10">
+        <div className="z-10 -ml-10 w-3/5">
           <Image
             src={rebar}
             alt="Construction workers observing rebar placement on a large paving area."
@@ -117,7 +118,7 @@ export default function Page() {
             className="w-full"
           />
         </div>
-        <div className="flex w-[450px] flex-col space-y-10 px-8 pt-20">
+        <div className="flex w-1/2 flex-col space-y-10 px-8 pt-20">
           <h2 className="font-heading text-5xl">
             <Balancer>Is your website a sleeper or a sales superstar?</Balancer>
           </h2>
@@ -129,6 +130,12 @@ export default function Page() {
             prospects.
           </Balancer>
         </div>
+      </div>
+      <div className="py-10">
+        <h2 className="z-10 w-full border-b border-dotted border-slate-500 pb-6 text-center font-heading text-5xl">
+          Specialized Services Tailored to the Civil Market
+        </h2>
+        <ServicesCircles />
       </div>
     </Fragment>
   );
