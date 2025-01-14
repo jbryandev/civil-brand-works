@@ -15,7 +15,6 @@ import ServicesCircles from "@/components/ServicesCircles";
 import { Button } from "@/components/ui/button";
 
 import cms from "../../../public/cms.jpg";
-import earthwork from "../../../public/earthwork.jpg";
 import rebar from "../../../public/rebar.jpg";
 import PageClient from "./page.client";
 
@@ -189,9 +188,22 @@ export default function Page() {
           </div>
         </div>
       </div>
-      <div className="h-[900px] w-full bg-[url(/earthwork.jpg)] bg-contain bg-fixed bg-no-repeat" />
-      <div className="container flex justify-end">
+      <div className="h-[900px] bg-[url(/earthwork.jpg)] bg-cover bg-fixed bg-center bg-no-repeat" />
+      <div className="container flex flex-col items-end">
         <div className="h-12 w-1/2 text-slate-900">
+          <PatternBackground />
+        </div>
+        <div className="mr-24 mt-10 flex w-[400px] flex-col space-y-2 px-20 py-20">
+          <h2 className="w-20 pb-6 font-heading text-5xl">Recent Projects</h2>
+          <p>
+            Explore how we&apos;ve successfully enhanced the web presence for
+            our civil infrastructure clients.
+          </p>
+        </div>
+      </div>
+      <div className="container flex h-[1490px] flex-col justify-between border-b border-t border-dotted border-slate-500">
+        <div />
+        <div className="h-12 w-[480px] text-slate-900">
           <PatternBackground />
         </div>
       </div>
