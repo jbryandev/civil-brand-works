@@ -39,17 +39,18 @@ export default function Page() {
         <div className="container flex">
           <h2 className="flex h-48 w-1/2 items-center px-20 font-heading text-3xl">
             <Balancer>
-              Innovative online strategies tailored to the AEC sector
+              Effective web strategies crafted for the AEC sector, leveraging
+              our extensive industry expertise.
             </Balancer>
           </h2>
-          <div className="flex h-48 w-1/2 flex-grow items-center space-x-2 px-20">
-            <Button className="flex h-12 w-48 items-center justify-center space-x-2 rounded-none bg-red-600">
+          <div className="flex h-48 w-1/2 items-center space-x-2 px-16">
+            <Button className="flex h-12 w-1/2 items-center justify-center space-x-2 rounded-none bg-red-600">
               <p>Book an intro call</p>
               <ArrowUpRight className="h-6 w-6" />
             </Button>
             <Button
               variant={"outline"}
-              className="flex h-12 w-48 items-center justify-center space-x-2 rounded-none border-2 border-slate-900"
+              className="flex h-12 w-1/2 items-center justify-center space-x-2 rounded-none border-2 border-slate-900"
             >
               <p>Learn More</p>
               <ArrowDown className="h-6 w-6" />
@@ -116,37 +117,52 @@ export default function Page() {
           </div>
         </div>
       </div>
-      <div className="container flex pb-10">
-        <div className="z-10 -ml-10 w-3/5">
+      <div className="container flex py-10">
+        <div className="z-10 w-1/2">
           <Image
             src={rebar}
             alt="Construction workers observing rebar placement on a large paving area."
             objectFit="cover"
-            className="w-full"
           />
         </div>
-        <div className="flex w-1/2 flex-col space-y-10 px-8 pt-20">
+        <div className="flex w-1/2 flex-col space-y-6 px-16">
           <h2 className="font-heading text-5xl">
             <Balancer>Is your website a sleeper or a sales superstar?</Balancer>
           </h2>
-          <Balancer>
-            If it is an afterthought, you&apos;re not alone. Many AEC companies
-            struggle to make the most of their websites. Every day, thousands of
-            potential customers search for solutions online. Let us transform
-            your website into a powerful tool that attracts and converts these
-            prospects.
-          </Balancer>
+          <p className="text-justify">
+            If you answered sleeper, you&apos;re not alone. Many AEC companies
+            struggle to make the most of their websites, and that&apos;s why
+            we&apos;re here to help. Every day, thousands of potential customers
+            search for solutions online. Let us transform your website into a
+            powerful tool that attracts and converts these prospects.
+          </p>
+          <p className="text-justify">
+            We blend cutting-edge web technology with extensive AEC industry
+            experience to deliver exceptional results. Partnering with us means
+            gaining access to dedicated web professionals with unparalleled
+            expertise, allowing you to focus more on your core business and less
+            on digital marketing.
+          </p>
+          <Button
+            variant={"outline"}
+            className="flex h-12 items-center justify-center space-x-2 rounded-none border-2 border-slate-900"
+          >
+            <p>Discover our industry-specific features</p>
+            <ArrowDown className="h-6 w-6" />
+          </Button>
         </div>
       </div>
       <div className="py-10">
-        <h2 className="z-10 w-full border-b border-dotted border-slate-500 pb-6 text-center font-heading text-5xl">
-          Specialized Services Tailored to the Civil Market
-        </h2>
+        <div className="w-full border-b border-dotted border-slate-500">
+          <h2 className="container z-10 px-16 pb-6 text-center font-heading text-5xl">
+            Specialized Services Tailored to the Civil Market
+          </h2>
+        </div>
         <ServicesCircles />
       </div>
       <div className="h-[900px] bg-slate-900 py-24 text-slate-50">
         <div className="container flex justify-end">
-          <div className="mb-14 flex w-1/2 items-center justify-between px-14">
+          <div className="mb-14 flex w-1/2 items-center justify-between px-16">
             <p className="uppercase">Features</p>
             <div className="flex space-x-2">
               <ArrowLeftCircle className="h-10 w-10 cursor-pointer" />
@@ -163,7 +179,7 @@ export default function Page() {
               className="w-full"
             />
           </div>
-          <div className="flex w-1/2 flex-col space-y-4 px-14">
+          <div className="flex w-1/2 flex-col space-y-4 px-16">
             <h2 className="font-heading text-7xl">
               Powerful Content Management
             </h2>

@@ -67,7 +67,7 @@ export default function ServicesCircles() {
   };
 
   return (
-    <div className="container flex flex-col items-center p-10">
+    <div className="container flex flex-col items-center p-16">
       <div className="flex justify-center space-x-16">
         {SERVICES.map((service) => (
           <Circle
