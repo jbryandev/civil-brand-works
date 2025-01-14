@@ -65,7 +65,7 @@ export default async function RootLayout({
               preview: isEnabled,
             }}
           />
-          <LayoutGuide />
+          {/* <LayoutGuide /> */}
           <Header />
           {children}
           <Footer />
