@@ -7,23 +7,28 @@ import { PatternBackground } from "./PatternBackground";
 const SERVICES = [
   {
     title: "Digital Strategy",
+    subtitle:
+      "Crafting tailored strategies to drive your business forward in the digital landscape",
     description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, nemo suscipit, exercitationem debitis cupiditate animi reprehenderit provident totam nulla illo omnis corrupti ipsam recusandae aut, ab eligendi ipsa nesciunt asperiores?",
+      "We specialize in creating customized digital strategies that propel your business ahead in the competitive online environment. Our approach ensures that your digital presence is not only strong but also sustainable.",
   },
   {
     title: "Design & Development",
+    subtitle: "Visually Engaging, Industry-Specific Web Design",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora ex natus reprehenderit rem hic fugiat beatae soluta. Ducimus corrupti maiores mollitia enim blanditiis deserunt alias officiis officia quis, asperiores illo odit, quos iure itaque molestias velit nisi explicabo non minus! Minima molestias odio pariatur similique dicta mollitia perferendis! Quam, porro?",
+      "Our design and development services focus on delivering visually captivating and industry-specific websites. We ensure that your online presence is not only aesthetically pleasing but also functionally robust.",
   },
   {
     title: "Content Marketing",
+    subtitle: "Engaging Content for the AEC Industry",
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis nobis consequuntur est, error fuga cumque sed dolor dolores enim eum facere temporibus vel tempora sequi perspiciatis quia at animi tempore. Eaque ipsum accusamus voluptate asperiores aliquam molestiae, atque obcaecati, delectus a possimus tenetur ipsa nam? Nesciunt, excepturi quis. Tempora, sunt?",
+      "We produce compelling content tailored for the Architecture, Engineering, and Construction (AEC) industry. Our content marketing strategies are designed to engage your target audience and drive meaningful interactions.",
   },
   {
     title: "Social Media Management",
+    subtitle: "Engaging with your audience on social media",
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum id quas consectetur dolores animi, sunt cupiditate nostrum inventore. Sed nam repellat vel officiis praesentium fugit sit dolore ipsum quia? Cupiditate, iure nihil! Provident iure, quis amet odio ex commodi nobis autem sequi saepe veritatis dignissimos.",
+      "Our social media management services help you connect with your audience effectively. We manage your social media presence to ensure consistent engagement and growth, fostering a strong community around your brand.",
   },
 ];
 
@@ -47,11 +52,18 @@ const Circle = ({
 );
 
 export default function ServicesCircles() {
-  const [description, setDescription] = useState("");
+  const [hoveredService, setHoveredService] = useState<{
+    subtitle: string;
+    description: string;
+  } | null>(null);
 
   const handleHover = (title: string) => {
     const service = SERVICES.find((service) => service.title === title);
-    setDescription(service ? service.description : "");
+    setHoveredService(
+      service
+        ? { subtitle: service.subtitle, description: service.description }
+        : null
+    );
   };
 
   return (
@@ -65,8 +77,13 @@ export default function ServicesCircles() {
           />
         ))}
       </div>
-      <div className="mt-10 flex h-24 w-[600px] justify-center text-slate-900">
-        {description}
+      <div className="z-10 mt-10 flex h-24 w-[650px] justify-center text-slate-900">
+        <div className="flex flex-col">
+          <h3 className="bg-slate-50 font-semibold">
+            {hoveredService?.subtitle ? hoveredService?.subtitle : ""}
+          </h3>
+          <p className="bg-slate-50">{hoveredService?.description}</p>
+        </div>
       </div>
     </div>
   );
