@@ -1,13 +1,21 @@
 import Image from "next/image";
 import { Fragment } from "react";
 
-import { ArrowDown, ArrowUpRight, Star } from "lucide-react";
+import {
+  ArrowDown,
+  ArrowLeftCircle,
+  ArrowRightCircle,
+  ArrowUpRight,
+  Star,
+} from "lucide-react";
 import Balancer from "react-wrap-balancer";
 
 import { PatternBackground } from "@/components/PatternBackground";
 import ServicesCircles from "@/components/ServicesCircles";
 import { Button } from "@/components/ui/button";
 
+import cms from "../../../public/cms.jpg";
+import earthwork from "../../../public/earthwork.jpg";
 import rebar from "../../../public/rebar.jpg";
 import PageClient from "./page.client";
 
@@ -136,6 +144,56 @@ export default function Page() {
           Specialized Services Tailored to the Civil Market
         </h2>
         <ServicesCircles />
+      </div>
+      <div className="h-[900px] bg-slate-900 py-24 text-slate-50">
+        <div className="container flex justify-end">
+          <div className="mb-14 flex w-1/2 items-center justify-between px-14">
+            <p className="uppercase">Features</p>
+            <div className="flex space-x-2">
+              <ArrowLeftCircle className="h-10 w-10 cursor-pointer" />
+              <ArrowRightCircle className="h-10 w-10 cursor-pointer" />
+            </div>
+          </div>
+        </div>
+        <div className="container flex">
+          <div className="w-1/2">
+            <Image
+              src={cms}
+              alt="Content management system interface."
+              objectFit="cover"
+              className="w-full"
+            />
+          </div>
+          <div className="flex w-1/2 flex-col space-y-4 px-14">
+            <h2 className="font-heading text-7xl">
+              Powerful Content Management
+            </h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Laudantium doloremque, totam assumenda modi dolor odio architecto
+              voluptatem, reiciendis nisi consectetur magnam amet harum quo,
+              sapiente maiores impedit. Laborum deserunt reiciendis error eius
+              consequatur, nostrum ab dolor incidunt quam nemo, voluptate
+              laudantium, quos voluptates blanditiis eligendi repudiandae
+              placeat. Eaque, quibusdam nulla.
+            </p>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Laudantium doloremque, totam assumenda modi dolor odio architecto
+              voluptatem, reiciendis nisi consectetur magnam amet harum quo,
+              sapiente maiores impedit. Laborum deserunt reiciendis error eius
+              consequatur, nostrum ab dolor incidunt quam nemo, voluptate
+              laudantium, quos voluptates blanditiis eligendi repudiandae
+              placeat. Eaque, quibusdam nulla.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="h-[900px] w-full bg-[url(/earthwork.jpg)] bg-contain bg-fixed bg-no-repeat" />
+      <div className="container flex justify-end">
+        <div className="h-12 w-1/2 text-slate-900">
+          <PatternBackground />
+        </div>
       </div>
     </Fragment>
   );

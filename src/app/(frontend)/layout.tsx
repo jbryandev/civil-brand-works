@@ -24,7 +24,7 @@ const fontHeading = localFont({
 });
 
 const LayoutGuide = () => (
-  <div className="pointer-events-none absolute -top-14 z-50 h-[10000px] w-full bg-[url(/layout.png)] bg-cover bg-center bg-no-repeat opacity-30" />
+  <div className="absolute -top-[440px] left-0 h-[10000px] w-full bg-[url(/layout.png)] bg-center bg-no-repeat opacity-30" />
 );
 
 const GridLines = () => (
@@ -65,7 +65,7 @@ export default async function RootLayout({
               preview: isEnabled,
             }}
           />
-          {/* <LayoutGuide /> */}
+          <LayoutGuide />
           <Header />
           {children}
           <Footer />
