@@ -8,27 +8,27 @@ const SERVICES = [
   {
     title: "Digital Strategy",
     subtitle:
-      "Crafting tailored strategies to drive your business forward in the digital landscape",
+      "Crafting tailored strategies to drive your business forward in the industry",
     description:
       "We specialize in creating customized digital strategies that propel your business ahead in the competitive online environment. Our approach ensures that your digital presence is not only strong but also sustainable.",
   },
   {
-    title: "Design & Development",
-    subtitle: "Visually Engaging, Industry-Specific Web Design",
+    title: "Custom Websites",
+    subtitle: "Visually Engaging, Market-Specific Websites",
     description:
-      "Our design and development services focus on delivering visually captivating and industry-specific websites. We ensure that your online presence is not only aesthetically pleasing but also functionally robust.",
+      "Our custom web design and development services focus on delivering engaging websites targeted to your audience and market. We ensure that your online presence is not only aesthetically pleasing but also functionally robust and effective.",
   },
   {
-    title: "Content Marketing",
-    subtitle: "Engaging Content for the AEC Industry",
+    title: "Business Applications",
+    subtitle: "Customized applications to streamline your business operations",
     description:
-      "We produce compelling content tailored for the Architecture, Engineering, and Construction (AEC) industry. Our content marketing strategies are designed to engage your target audience and drive meaningful interactions.",
+      "We develop custom applications that streamline your business operations and enhance your productivity. Our applications are designed to meet your unique requirements and help you achieve your business goals.",
   },
   {
-    title: "Social Media Management",
-    subtitle: "Engaging with your audience on social media",
+    title: "SEO",
+    subtitle: "Search engine optimization to boost your online visibility",
     description:
-      "Our social media management services help you connect with your audience effectively. We manage your social media presence to ensure consistent engagement and growth, fostering a strong community around your brand.",
+      "Our SEO services are designed to improve your online visibility and drive organic traffic to your website. We use proven strategies to optimize your website for search engines and help you reach your target audience.",
   },
 ];
 
@@ -40,12 +40,12 @@ const Circle = ({
   onHover: (description: string) => void;
 }) => (
   <button
-    className="group relative h-64 w-64 cursor-pointer overflow-hidden rounded-full border-2 border-slate-900 hover:bg-slate-900"
+    className="group relative h-24 w-24 cursor-pointer overflow-hidden rounded-full border-2 border-slate-900 hover:bg-slate-900 md:h-32 md:w-32 lg:h-48 lg:w-48 xl:h-64 xl:w-64"
     onMouseEnter={() => onHover(title)}
     onMouseLeave={() => onHover("")}
   >
     <PatternBackground />
-    <span className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-slate-50 text-center text-3xl group-hover:bg-slate-900 group-hover:text-slate-50">
+    <span className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-slate-50 text-center text-sm group-hover:bg-slate-900 group-hover:text-slate-50 md:text-base lg:text-xl xl:text-3xl">
       {title}
     </span>
   </button>
@@ -67,8 +67,8 @@ export default function ServicesCircles() {
   };
 
   return (
-    <div className="container flex flex-col items-center p-16">
-      <div className="flex justify-center space-x-16">
+    <div className="container flex flex-col items-center py-16">
+      <div className="flex w-full flex-wrap justify-evenly gap-2">
         {SERVICES.map((service) => (
           <Circle
             key={service.title}
@@ -77,8 +77,8 @@ export default function ServicesCircles() {
           />
         ))}
       </div>
-      <div className="z-10 mt-10 flex h-24 w-[650px] justify-center text-slate-900">
-        <div className="flex flex-col">
+      <div className="z-10 mt-10 flex h-[170px] w-full justify-center px-4 text-slate-900 sm:h-[100px] sm:px-16 lg:w-[800px]">
+        <div className="flex flex-col text-sm md:text-base">
           <h3 className="bg-slate-50 font-semibold">
             {hoveredService?.subtitle ? hoveredService?.subtitle : ""}
           </h3>

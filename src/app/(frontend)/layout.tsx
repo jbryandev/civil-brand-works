@@ -24,14 +24,14 @@ const fontHeading = localFont({
 });
 
 const LayoutGuide = () => (
-  <div className="absolute -top-[440px] left-0 h-[10000px] w-full bg-[url(/layout.png)] bg-center bg-no-repeat opacity-30" />
+  <div className="absolute -top-[230px] left-0 h-[10000px] w-full bg-[url(/layout.png)] bg-center bg-no-repeat opacity-30" />
 );
 
 const GridLines = () => (
   <div className="z-1 pointer-events-none absolute top-0 h-[10000px] w-full">
     <div className="container flex h-full">
-      <div className="h-full w-1/2 border-l border-r border-dotted border-slate-500" />
-      <div className="h-full flex-grow border-r border-dotted border-slate-500" />
+      <div className="h-full w-full border-l border-r border-dotted border-slate-500 sm:w-1/2" />
+      <div className="hidden h-full flex-grow border-r border-dotted border-slate-500 sm:flex" />
     </div>
   </div>
 );
