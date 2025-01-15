@@ -118,7 +118,7 @@ export default function Page() {
         </div>
       </div>
       <div className="container flex py-10">
-        <div className="z-10 w-1/2">
+        <div className="z-10 -ml-24 w-4/5">
           <Image
             src={rebar}
             alt="Construction workers observing rebar placement on a large paving area."
@@ -145,9 +145,9 @@ export default function Page() {
           </p>
           <Button
             variant={"outline"}
-            className="flex h-12 items-center justify-center space-x-2 rounded-none border-2 border-slate-900"
+            className="flex h-12 w-80 items-center justify-center space-x-2 rounded-none border-2 border-slate-900"
           >
-            <p>Discover our industry-specific features</p>
+            <p>Discover our tailor-made features</p>
             <ArrowDown className="h-6 w-6" />
           </Button>
         </div>
@@ -160,18 +160,9 @@ export default function Page() {
         </div>
         <ServicesCircles />
       </div>
-      <div className="h-[900px] bg-slate-900 py-24 text-slate-50">
-        <div className="container flex justify-end">
-          <div className="mb-14 flex w-1/2 items-center justify-between px-16">
-            <p className="uppercase">Features</p>
-            <div className="flex space-x-2">
-              <ArrowLeftCircle className="h-10 w-10 cursor-pointer" />
-              <ArrowRightCircle className="h-10 w-10 cursor-pointer" />
-            </div>
-          </div>
-        </div>
+      <div className="bg-slate-900 pb-36 pt-24 text-slate-50">
         <div className="container flex">
-          <div className="w-1/2">
+          <div className="z-10 -ml-24 mt-28 w-4/5">
             <Image
               src={cms}
               alt="Content management system interface."
@@ -180,10 +171,17 @@ export default function Page() {
             />
           </div>
           <div className="flex w-1/2 flex-col space-y-4 px-16">
+            <div className="mb-14 flex w-full items-center justify-between">
+              <p className="uppercase">Features</p>
+              <div className="flex space-x-2">
+                <ArrowLeftCircle className="h-10 w-10 cursor-pointer" />
+                <ArrowRightCircle className="h-10 w-10 cursor-pointer" />
+              </div>
+            </div>
             <h2 className="font-heading text-7xl">
               Powerful Content Management
             </h2>
-            <p>
+            <p className="text-justify">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit.
               Laudantium doloremque, totam assumenda modi dolor odio architecto
               voluptatem, reiciendis nisi consectetur magnam amet harum quo,
@@ -192,7 +190,7 @@ export default function Page() {
               laudantium, quos voluptates blanditiis eligendi repudiandae
               placeat. Eaque, quibusdam nulla.
             </p>
-            <p>
+            <p className="text-justify">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit.
               Laudantium doloremque, totam assumenda modi dolor odio architecto
               voluptatem, reiciendis nisi consectetur magnam amet harum quo,
@@ -217,10 +215,12 @@ export default function Page() {
           </p>
         </div>
       </div>
-      <div className="container flex h-[1490px] flex-col justify-between border-b border-t border-dotted border-slate-500">
-        <div />
-        <div className="h-12 w-[480px] text-slate-900">
-          <PatternBackground />
+      <div className="flex h-[1490px] border-b border-t border-dotted border-slate-500">
+        <div className="container flex flex-col justify-between">
+          <div />
+          <div className="h-12 w-[480px] text-slate-900">
+            <PatternBackground />
+          </div>
         </div>
       </div>
     </Fragment>
